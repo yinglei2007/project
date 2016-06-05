@@ -1,0 +1,63 @@
+---
+title       : BMI Calculator
+subtitle    : Data Product Project
+author      : Lei Ying 
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : [mathjax, quiz, bootstrap]            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Introduction
+The name of App is "BMI Calculator". 
+This App takes body weight and height as input and calculate BMI. 
+
+Project requires:
+- Some form of input
+- Some operation on the ui input in server.R
+- Some reactive output displayed as a result of server calculations
+- You must include endough documentation.
+- The documentation should be at the Shiny website itself. 
+
+--- 
+
+## Widgets of "BMI Calculator"
+This App includes 2 widgets: 
+- sliderInput: 
+  + First slider is to choose body weight (lb)
+  + Second slider is to choose height (ft)
+- submitButton: This button submits body weight and height to server for calculation.
+
+---
+
+## BMI Calculator
+```{r, echo=FALSE}
+weight=100
+height=5.3
+BMI=weight/(((height*12)^2)/730)
+print("Weight (lb): ")
+weight
+print("Height (ft): ")
+height
+print("BMI: ")
+BMI
+   
+```
+
+---
+
+## Trouble Shooting/Need help
+### The Shiny App is running fine one Shiny website. 
+- App link is https://yinglei2007.shinyapps.io/BMI_Calculator/
+
+### However, there is always an error during knitting process with the same code.
+### The error message is "argument "weight" is missing, with no default"
+
+
+
+
+
+
